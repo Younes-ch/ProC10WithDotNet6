@@ -1,0 +1,1675 @@
+<HTML>
+<HEAD>
+<TITLE> .\CarLibrary\bin\Debug\net9.0\CarLibrary.dll - IL DASM</TITLE>
+</HEAD>
+<BODY>
+<FONT SIZE=3 FACE="Arial">
+<PRE>
+
+<FONT SIZE=4><B>
+<I><FONT COLOR=GREEN>//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.8.3928.0</FONT></I>
+<I><FONT COLOR=GREEN>//  Copyright (c) Microsoft Corporation.  All rights reserved.</FONT></I>
+</B></FONT>
+
+<I><FONT COLOR=GREEN>
+// ----- DOS Header:
+// Magic:                      0x5a4d
+// Bytes on last page:         0x0090
+// Pages in file:              0x0003
+// Relocations:                0x0000
+// Size of header (paragraphs):0x0004
+// Min extra paragraphs:       0x0000
+// Max extra paragraphs:       0xffff
+// Initial (relative) SS:      0x0000
+// Initial SP:                 0x00b8
+// Checksum:                   0x0000
+// Initial IP:                 0x0000
+// Initial (relative) CS:      0x0000
+// File addr. of reloc table:  0x0040
+// Overlay number:             0x0000
+// OEM identifier:             0x0000
+// OEM info:                   0x0000
+// File addr. of COFF header:  0x0080
+// ----- COFF/PE Headers:
+// Signature:                  0x00004550
+// ----- COFF Header:
+// Machine:                    0x014c
+// Number of sections:         0x0003
+// Time-date stamp:            0xc341a89f
+// Ptr to symbol table:        0x00000000
+// Number of symbols:          0x00000000
+// Size of optional header:    0x00e0
+// Characteristics:            0x2022
+// ----- PE Optional Header (32 bit):
+// Magic:                          0x010b
+// Major linker version:           0x30
+// Minor linker version:           0x00
+// Size of code:                   0x00000e00
+// Size of init.data:              0x00000600
+// Size of uninit.data:            0x00000000
+// Addr. of entry point:           0x00002de2
+// Base of code:                   0x00002000
+// Base of data:                   0x00004000
+// Image base:                     0x10000000
+// Section alignment:              0x00002000
+// File alignment:                 0x00000200
+// Major OS version:               0x0004
+// Minor OS version:               0x0000
+// Major image version:            0x0000
+// Minor image version:            0x0000
+// Major subsystem version:        0x0004
+// Minor subsystem version:        0x0000
+// Size of image:                  0x00008000
+// Size of headers:                0x00000200
+// Checksum:                       0x00000000
+// Subsystem:                      0x0003
+// DLL characteristics:            0x8560
+// Size of stack reserve:          0x00100000
+// Size of stack commit:           0x00001000
+// Size of heap reserve:           0x00100000
+// Size of heap commit:            0x00001000
+// Loader flags:                   0x00000000
+// Directories:                    0x00000010
+// 0x00000000 [0x00000000] address [size] of Export Directory:          
+// 0x00002d8d [0x0000004f] address [size] of Import Directory:          
+// 0x00004000 [0x000003b4] address [size] of Resource Directory:        
+// 0x00000000 [0x00000000] address [size] of Exception Directory:       
+// 0x00000000 [0x00000000] address [size] of Security Directory:        
+// 0x00006000 [0x0000000c] address [size] of Base Relocation Table:     
+// 0x00002c9c [0x00000054] address [size] of Debug Directory:           
+// 0x00000000 [0x00000000] address [size] of Architecture Specific:     
+// 0x00000000 [0x00000000] address [size] of Global Pointer:            
+// 0x00000000 [0x00000000] address [size] of TLS Directory:             
+// 0x00000000 [0x00000000] address [size] of Load Config Directory:     
+// 0x00000000 [0x00000000] address [size] of Bound Import Directory:    
+// 0x00002000 [0x00000008] address [size] of Import Address Table:      
+// 0x00000000 [0x00000000] address [size] of Delay Load IAT:            
+// 0x00002008 [0x00000048] address [size] of CLR Header:                
+
+
+// Image sections:
+//              .text
+//              0x00000de8 Virtual Size
+//              0x00002000 Virtual Address
+//              0x00000e00 Size of Raw Data
+//              0x00000200 Pointer to Raw Data
+//              0x00000000 Pointer to Relocations
+//              0x00000000 Pointer to Linenumbers
+//                  0x0000 Number of Relocations
+//                  0x0000 Number of Linenumbers
+//              0x60000020 Characteristics
+//                         CNT_CODE
+//                         MEM_EXECUTE
+//                         MEM_READ
+
+//              .rsrc
+//              0x000003b4 Virtual Size
+//              0x00004000 Virtual Address
+//              0x00000400 Size of Raw Data
+//              0x00001000 Pointer to Raw Data
+//              0x00000000 Pointer to Relocations
+//              0x00000000 Pointer to Linenumbers
+//                  0x0000 Number of Relocations
+//                  0x0000 Number of Linenumbers
+//              0x40000040 Characteristics
+//                         CNT_INITIALIZED_DATA
+//                         MEM_READ
+
+//              .reloc
+//              0x0000000c Virtual Size
+//              0x00006000 Virtual Address
+//              0x00000200 Size of Raw Data
+//              0x00001400 Pointer to Raw Data
+//              0x00000000 Pointer to Relocations
+//              0x00000000 Pointer to Linenumbers
+//                  0x0000 Number of Relocations
+//                  0x0000 Number of Linenumbers
+//              0x42000040 Characteristics
+//                         CNT_INITIALIZED_DATA
+//                         MEM_DISCARDABLE
+//                         MEM_READ
+
+// Base Relocation Table
+//              0x00002000 Page RVA
+//              0x0000000c Block Size
+//              0x00000002 Number of Entries
+//              Entry 1: Type 0x3 Offset 0x00000de4
+//              Entry 2: Type 0x0 Offset 0x00000000
+
+// Import Address Table
+//     DLL : mscoree.dll
+//              0x00002000 Import Address Table
+//              0x00002dcf Import Name Table
+//              0          Time Date Stamp
+//              0          Index of First Forwarder Reference
+//
+//              0x0000  _CorDllMain
+
+// Delay Load Import Address Table
+// No data.
+
+// Entry point code:
+//FF 25 00 20 00 10 
+
+
+// ----- CLR Header:
+// Header size:                        0x00000048
+// Major runtime version:              0x0002
+// Minor runtime version:              0x0005
+// 0x00002120 [0x00000b7c] address [size] of Metadata Directory:        
+// Flags:                              0x00000001
+// Entry point token:                  0x00000000
+// 0x00000000 [0x00000000] address [size] of Resources Directory:       
+// 0x00000000 [0x00000000] address [size] of Strong Name Signature:     
+// 0x00000000 [0x00000000] address [size] of CodeManager Table:         
+// 0x00000000 [0x00000000] address [size] of VTableFixups Directory:    
+// 0x00000000 [0x00000000] address [size] of Export Address Table:      
+// 0x00000000 [0x00000000] address [size] of Precompile Header:         
+
+// Metadata Header
+//    Storage Signature:
+//              0x424a5342 Signature
+//                  0x0001 Major Version
+//                  0x0001 Minor Version
+//              0x00000000 Extra Data Offset
+//              0x0000000c Version String Length
+//              'v4.0.30319' Version String
+//    Storage Header:
+//                    0x00 Flags
+//                  0x0005 Number of Streams
+//    Stream 1:
+//              0x0000006c Offset
+//              0x0000049c Size
+//              '#~' Name
+//    Stream 2:
+//              0x00000508 Offset
+//              0x00000430 Size
+//              '#Strings' Name
+//    Stream 3:
+//              0x00000938 Offset
+//              0x0000008c Size
+//              '#US' Name
+//    Stream 4:
+//              0x000009c4 Offset
+//              0x00000010 Size
+//              '#GUID' Name
+//    Stream 5:
+//              0x000009d4 Offset
+//              0x000001a8 Size
+//              '#Blob' Name
+
+//    Metadata Stream Header:
+//              0x00000000 Reserved
+//                    0x02 Major
+//                    0x00 Minor
+//                    0x00 Heaps
+//                    0x01 Rid
+//      0x0000000901a01d57 MaskValid
+//      0x000016003301fa00 Sorted
+
+// Code Manager Table:
+//  default
+
+
+// Export Address Table Jumps:
+// No data.
+
+// File size            : 5632
+// PE header size       : 512 (496 used)    ( 9.09%)
+// PE additional info   : 1203              (21.36%)
+// Num.of PE sections   : 3
+// CLR header size     : 72                 ( 1.28%)
+// CLR meta-data size  : 2940               (52.20%)
+// CLR additional info : 0                  ( 0.00%)
+// CLR method headers  : 16                 ( 0.28%)
+// Managed code         : 191               ( 3.39%)
+// Data                 : 1536              (27.27%)
+// Unaccounted          : -838              (-14.88%)
+
+// Num.of PE sections   : 3
+//   .text    - 3584
+//   .rsrc    - 1024
+//   .reloc   - 512
+
+// CLR meta-data size  : 2940
+//   Module        -    1 (10 bytes)
+//   TypeDef       -    7 (98 bytes)      0 interfaces, 0 explicit layout
+//   TypeRef       -   23 (138 bytes)
+//   MethodDef     -   17 (238 bytes)     1 abstract, 0 native, 16 bodies
+//   FieldDef      -   12 (72 bytes)      0 constant
+//   MemberRef     -   20 (120 bytes)
+//   ParamDef      -   12 (72 bytes)
+//   Constant      -    6 (36 bytes)
+//   CustomAttribute-   30 (180 bytes)
+//   PropertyMap   -    1 (4 bytes)
+//   Property      -    4 (24 bytes)
+//   MethodSemantic-    7 (42 bytes)
+//   Assembly      -    1 (22 bytes)
+//   AssemblyRef   -    2 (40 bytes)
+//   Strings       -  1071 bytes
+//   Blobs         -   424 bytes
+//   UserStrings   -   140 bytes
+//   Guids         -    16 bytes
+//   Uncategorized -   193 bytes
+
+// CLR method headers : 16
+//   Num.of method bodies  - 16
+//   Num.of fat headers    - 0
+//   Num.of tiny headers   - 16
+
+// Managed code : 191
+//   Ave method size - 11
+<I><FONT COLOR=GREEN>// Classes defined in this module:</FONT></I>
+<I><FONT COLOR=GREEN>//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</FONT></I>
+<I><FONT COLOR=GREEN>// Class Car                            (public) (abstract) (auto) (ansi) </FONT></I>
+<I><FONT COLOR=GREEN>// Class EngineStateEnum                (public) (auto) (ansi) (sealed) </FONT></I>
+<I><FONT COLOR=GREEN>// Class MiniVan                        (public) (auto) (ansi) </FONT></I>
+<I><FONT COLOR=GREEN>// Class MusicMediaEnum                 (public) (auto) (ansi) (sealed) </FONT></I>
+<I><FONT COLOR=GREEN>// Class MyInternalClass                (auto) (ansi) </FONT></I>
+<I><FONT COLOR=GREEN>// Class SportsCar                      (public) (auto) (ansi) </FONT></I>
+<I><FONT COLOR=GREEN>//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</FONT></I>
+
+// ================================= M E T A I N F O ================================================
+
+// ===========================================================
+// ScopeName : CarLibrary.dll
+// MVID      : {77A699CD-A4A3-4C38-8449-6FBFB77CE967}
+// 	CustomAttribute #1 (0c000004)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000e
+// 		CustomAttributeName: System.Runtime.CompilerServices.RefSafetyRulesAttribute :: instance void .ctor(int32)
+// 		Length: 8
+// 		Value : 01 00 0b 00 00 00 00 00                          >                <
+// 		ctor args: (11)
+// 
+// ===========================================================
+// Global functions
+// -------------------------------------------------------
+// 
+// Global fields
+// -------------------------------------------------------
+// 
+// Global MemberRefs
+// -------------------------------------------------------
+// 
+// TypeDef #1 (02000002)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.Car  (02000002)
+// 	Flags     : [Public] [AutoLayout] [Class] [Abstract] [AnsiClass] [BeforeFieldInit]  (00100081)
+// 	Extends   : 01000012 [TypeRef] System.Object
+// 	Field #1 (04000001)
+// 	-------------------------------------------------------
+// 		Field Name: <PetName>k__BackingField (04000001)
+// 		Flags     : [Private]  (00000001)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  String
+// 		CustomAttribute #1 (0c000002)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 		CustomAttribute #2 (0c000003)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000012
+// 			CustomAttributeName: System.Diagnostics.DebuggerBrowsableAttribute :: instance void .ctor(value class System.Diagnostics.DebuggerBrowsableState)
+// 			Length: 8
+// 			Value : 01 00 00 00 00 00 00 00                          >                <
+// 			ctor args: ( <can not decode> )
+// 
+// 
+// 	Field #2 (04000002)
+// 	-------------------------------------------------------
+// 		Field Name: <CurrentSpeed>k__BackingField (04000002)
+// 		Flags     : [Private]  (00000001)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  I4
+// 		CustomAttribute #1 (0c000013)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 		CustomAttribute #2 (0c000014)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000012
+// 			CustomAttributeName: System.Diagnostics.DebuggerBrowsableAttribute :: instance void .ctor(value class System.Diagnostics.DebuggerBrowsableState)
+// 			Length: 8
+// 			Value : 01 00 00 00 00 00 00 00                          >                <
+// 			ctor args: ( <can not decode> )
+// 
+// 
+// 	Field #3 (04000003)
+// 	-------------------------------------------------------
+// 		Field Name: <MaxSpeed>k__BackingField (04000003)
+// 		Flags     : [Private]  (00000001)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  I4
+// 		CustomAttribute #1 (0c000018)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 		CustomAttribute #2 (0c000019)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000012
+// 			CustomAttributeName: System.Diagnostics.DebuggerBrowsableAttribute :: instance void .ctor(value class System.Diagnostics.DebuggerBrowsableState)
+// 			Length: 8
+// 			Value : 01 00 00 00 00 00 00 00                          >                <
+// 			ctor args: ( <can not decode> )
+// 
+// 
+// 	Field #4 (04000004)
+// 	-------------------------------------------------------
+// 		Field Name: State (04000004)
+// 		Flags     : [Family]  (00000004)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.EngineStateEnum
+// 
+// 	Method #1 (06000001) 
+// 	-------------------------------------------------------
+// 		MethodName: get_PetName (06000001)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002050
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: String
+// 		No arguments.
+// 		CustomAttribute #1 (0c000001)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #2 (06000002) 
+// 	-------------------------------------------------------
+// 		MethodName: set_PetName (06000002)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002058
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 		1 Parameters
+// 			(1) ParamToken : (08000001) Name : value flags: [none] (00000000)
+// 		CustomAttribute #1 (0c000012)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #3 (06000003) 
+// 	-------------------------------------------------------
+// 		MethodName: get_CurrentSpeed (06000003)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002061
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: I4
+// 		No arguments.
+// 		CustomAttribute #1 (0c000017)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #4 (06000004) 
+// 	-------------------------------------------------------
+// 		MethodName: set_CurrentSpeed (06000004)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002069
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  I4
+// 		1 Parameters
+// 			(1) ParamToken : (08000002) Name : value flags: [none] (00000000)
+// 		CustomAttribute #1 (0c00001a)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #5 (06000005) 
+// 	-------------------------------------------------------
+// 		MethodName: get_MaxSpeed (06000005)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002072
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: I4
+// 		No arguments.
+// 		CustomAttribute #1 (0c00001b)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #6 (06000006) 
+// 	-------------------------------------------------------
+// 		MethodName: set_MaxSpeed (06000006)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x0000207a
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  I4
+// 		1 Parameters
+// 			(1) ParamToken : (08000003) Name : value flags: [none] (00000000)
+// 		CustomAttribute #1 (0c00001c)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a000011
+// 			CustomAttributeName: System.Runtime.CompilerServices.CompilerGeneratedAttribute :: instance void .ctor()
+// 			Length: 4
+// 			Value : 01 00 00 00                                      >                <
+// 			ctor args: ()
+// 
+// 
+// 	Method #7 (06000007) 
+// 	-------------------------------------------------------
+// 		MethodName: get_EngineState (06000007)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName]  (00000886)
+// 		RVA       : 0x00002083
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: ValueClass CarLibrary.EngineStateEnum
+// 		No arguments.
+// 
+// 	Method #8 (06000008) 
+// 	-------------------------------------------------------
+// 		MethodName: TurboBoost (06000008)
+// 		Flags     : [Public] [Virtual] [HideBySig] [NewSlot] [Abstract]  (000005c6)
+// 		RVA       : 0x00000000
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 	Method #9 (06000009) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (06000009)
+// 		Flags     : [Family] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001884)
+// 		RVA       : 0x0000208b
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 	Method #10 (0600000a) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (0600000A)
+// 		Flags     : [Family] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001884)
+// 		RVA       : 0x0000209c
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		3 Arguments
+// 			Argument #1:  String
+// 			Argument #2:  I4
+// 			Argument #3:  I4
+// 		3 Parameters
+// 			(1) ParamToken : (08000004) Name : name flags: [none] (00000000)
+// 			(2) ParamToken : (08000005) Name : maxSpeed flags: [none] (00000000)
+// 			(3) ParamToken : (08000006) Name : currentSpeed flags: [none] (00000000)
+// 
+// 	Property #1 (17000001)
+// 	-------------------------------------------------------
+// 		Prop.Name : PetName (17000001)
+// 		Flags     : [none] (00000000)
+// 		CallCnvntn: [PROPERTY]
+// 		hasThis 
+// 		ReturnType: String
+// 		No arguments.
+// 		DefltValue: 
+// 		Setter    : (06000002) set_PetName
+// 		Getter    : (06000001) get_PetName
+// 		0 Others
+// 
+// 	Property #2 (17000002)
+// 	-------------------------------------------------------
+// 		Prop.Name : CurrentSpeed (17000002)
+// 		Flags     : [none] (00000000)
+// 		CallCnvntn: [PROPERTY]
+// 		hasThis 
+// 		ReturnType: I4
+// 		No arguments.
+// 		DefltValue: 
+// 		Setter    : (06000004) set_CurrentSpeed
+// 		Getter    : (06000003) get_CurrentSpeed
+// 		0 Others
+// 
+// 	Property #3 (17000003)
+// 	-------------------------------------------------------
+// 		Prop.Name : MaxSpeed (17000003)
+// 		Flags     : [none] (00000000)
+// 		CallCnvntn: [PROPERTY]
+// 		hasThis 
+// 		ReturnType: I4
+// 		No arguments.
+// 		DefltValue: 
+// 		Setter    : (06000006) set_MaxSpeed
+// 		Getter    : (06000005) get_MaxSpeed
+// 		0 Others
+// 
+// 	Property #4 (17000004)
+// 	-------------------------------------------------------
+// 		Prop.Name : EngineState (17000004)
+// 		Flags     : [none] (00000000)
+// 		CallCnvntn: [PROPERTY]
+// 		hasThis 
+// 		ReturnType: ValueClass CarLibrary.EngineStateEnum
+// 		No arguments.
+// 		DefltValue: 
+// 		Setter    : (06000000) 
+// 		Getter    : (06000007) get_EngineState
+// 		0 Others
+// 
+// 	CustomAttribute #1 (0c000015)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000f
+// 		CustomAttributeName: System.Runtime.CompilerServices.NullableContextAttribute :: instance void .ctor(unsigned int8)
+// 		Length: 5
+// 		Value : 01 00 01 00 00                                   >                <
+// 		ctor args: (1)
+// 
+// 	CustomAttribute #2 (0c000016)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000010
+// 		CustomAttributeName: System.Runtime.CompilerServices.NullableAttribute :: instance void .ctor(unsigned int8)
+// 		Length: 5
+// 		Value : 01 00 00 00 00                                   >                <
+// 		ctor args: (0)
+// 
+// 
+// TypeDef #2 (02000003)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.EngineStateEnum  (02000003)
+// 	Flags     : [Public] [AutoLayout] [Class] [Sealed] [AnsiClass]  (00000101)
+// 	Extends   : 01000016 [TypeRef] System.Enum
+// 	Field #1 (04000005)
+// 	-------------------------------------------------------
+// 		Field Name: value__ (04000005)
+// 		Flags     : [Public] [SpecialName] [RTSpecialName]  (00000606)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  I4
+// 
+// 	Field #2 (04000006)
+// 	-------------------------------------------------------
+// 		Field Name: EngineAlive (04000006)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 0
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.EngineStateEnum
+// 
+// 	Field #3 (04000007)
+// 	-------------------------------------------------------
+// 		Field Name: EngineDead (04000007)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 1
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.EngineStateEnum
+// 
+// 
+// TypeDef #3 (02000004)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.MiniVan  (02000004)
+// 	Flags     : [Public] [AutoLayout] [Class] [AnsiClass] [BeforeFieldInit]  (00100001)
+// 	Extends   : 02000002 [TypeDef] CarLibrary.Car
+// 	Method #1 (0600000b) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (0600000B)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001886)
+// 		RVA       : 0x000020c5
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 	Method #2 (0600000c) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (0600000C)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001886)
+// 		RVA       : 0x000020cf
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		3 Arguments
+// 			Argument #1:  String
+// 			Argument #2:  I4
+// 			Argument #3:  I4
+// 		3 Parameters
+// 			(1) ParamToken : (08000007) Name : name flags: [none] (00000000)
+// 			(2) ParamToken : (08000008) Name : maxSpeed flags: [none] (00000000)
+// 			(3) ParamToken : (08000009) Name : currentSpeed flags: [none] (00000000)
+// 		CustomAttribute #1 (0c00001d)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a00000f
+// 			CustomAttributeName: System.Runtime.CompilerServices.NullableContextAttribute :: instance void .ctor(unsigned int8)
+// 			Length: 5
+// 			Value : 01 00 01 00 00                                   >                <
+// 			ctor args: (1)
+// 
+// 
+// 	Method #3 (0600000d) 
+// 	-------------------------------------------------------
+// 		MethodName: TurboBoost (0600000D)
+// 		Flags     : [Public] [Virtual] [HideBySig] [ReuseSlot]  (000000c6)
+// 		RVA       : 0x000020dc
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 
+// TypeDef #4 (02000005)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.MusicMediaEnum  (02000005)
+// 	Flags     : [Public] [AutoLayout] [Class] [Sealed] [AnsiClass]  (00000101)
+// 	Extends   : 01000016 [TypeRef] System.Enum
+// 	Field #1 (04000008)
+// 	-------------------------------------------------------
+// 		Field Name: value__ (04000008)
+// 		Flags     : [Public] [SpecialName] [RTSpecialName]  (00000606)
+// 		CallCnvntn: [FIELD]
+// 		Field type:  I4
+// 
+// 	Field #2 (04000009)
+// 	-------------------------------------------------------
+// 		Field Name: MusicCd (04000009)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 0
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.MusicMediaEnum
+// 
+// 	Field #3 (0400000a)
+// 	-------------------------------------------------------
+// 		Field Name: MusicTape (0400000A)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 1
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.MusicMediaEnum
+// 
+// 	Field #4 (0400000b)
+// 	-------------------------------------------------------
+// 		Field Name: MusicRadio (0400000B)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 2
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.MusicMediaEnum
+// 
+// 	Field #5 (0400000c)
+// 	-------------------------------------------------------
+// 		Field Name: MusicMp3 (0400000C)
+// 		Flags     : [Public] [Static] [Literal] [HasDefault]  (00008056)
+// 	DefltValue: (I4) 3
+// 		CallCnvntn: [FIELD]
+// 		Field type:  ValueClass CarLibrary.MusicMediaEnum
+// 
+// 
+// TypeDef #5 (02000006)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.MyInternalClass  (02000006)
+// 	Flags     : [NotPublic] [AutoLayout] [Class] [AnsiClass] [BeforeFieldInit]  (00100000)
+// 	Extends   : 01000012 [TypeRef] System.Object
+// 	Method #1 (0600000e) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (0600000E)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001886)
+// 		RVA       : 0x000020f1
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 
+// TypeDef #6 (02000007)
+// -------------------------------------------------------
+// 	TypDefName: CarLibrary.SportsCar  (02000007)
+// 	Flags     : [Public] [AutoLayout] [Class] [AnsiClass] [BeforeFieldInit]  (00100001)
+// 	Extends   : 02000002 [TypeDef] CarLibrary.Car
+// 	Method #1 (0600000f) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (0600000F)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001886)
+// 		RVA       : 0x000020fa
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 	Method #2 (06000010) 
+// 	-------------------------------------------------------
+// 		MethodName: .ctor (06000010)
+// 		Flags     : [Public] [HideBySig] [ReuseSlot] [SpecialName] [RTSpecialName] [.ctor]  (00001886)
+// 		RVA       : 0x00002104
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		3 Arguments
+// 			Argument #1:  String
+// 			Argument #2:  I4
+// 			Argument #3:  I4
+// 		3 Parameters
+// 			(1) ParamToken : (0800000a) Name : name flags: [none] (00000000)
+// 			(2) ParamToken : (0800000b) Name : maxSpeed flags: [none] (00000000)
+// 			(3) ParamToken : (0800000c) Name : currentSpeed flags: [none] (00000000)
+// 		CustomAttribute #1 (0c00001e)
+// 		-------------------------------------------------------
+// 			CustomAttribute Type: 0a00000f
+// 			CustomAttributeName: System.Runtime.CompilerServices.NullableContextAttribute :: instance void .ctor(unsigned int8)
+// 			Length: 5
+// 			Value : 01 00 01 00 00                                   >                <
+// 			ctor args: (1)
+// 
+// 
+// 	Method #3 (06000011) 
+// 	-------------------------------------------------------
+// 		MethodName: TurboBoost (06000011)
+// 		Flags     : [Public] [Virtual] [HideBySig] [ReuseSlot]  (000000c6)
+// 		RVA       : 0x00002111
+// 		ImplFlags : [IL] [Managed]  (00000000)
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// 
+// TypeRef #1 (01000001)
+// -------------------------------------------------------
+// Token:             0x01000001
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.CompilationRelaxationsAttribute
+// 	MemberRef #1 (0a000001)
+// 	-------------------------------------------------------
+// 		Member: (0a000001) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  I4
+// 
+// TypeRef #2 (01000002)
+// -------------------------------------------------------
+// Token:             0x01000002
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
+// 	MemberRef #1 (0a000002)
+// 	-------------------------------------------------------
+// 		Member: (0a000002) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// TypeRef #3 (01000003)
+// -------------------------------------------------------
+// Token:             0x01000003
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Diagnostics.DebuggableAttribute
+// 	MemberRef #1 (0a000003)
+// 	-------------------------------------------------------
+// 		Member: (0a000003) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  ValueClass DebuggingModes
+// 
+// TypeRef #4 (01000004)
+// -------------------------------------------------------
+// Token:             0x01000004
+// ResolutionScope:   0x01000003
+// TypeRefName:       DebuggingModes
+// 
+// TypeRef #5 (01000005)
+// -------------------------------------------------------
+// Token:             0x01000005
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.Versioning.TargetFrameworkAttribute
+// 	MemberRef #1 (0a000004)
+// 	-------------------------------------------------------
+// 		Member: (0a000004) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #6 (01000006)
+// -------------------------------------------------------
+// Token:             0x01000006
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyCompanyAttribute
+// 	MemberRef #1 (0a000005)
+// 	-------------------------------------------------------
+// 		Member: (0a000005) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #7 (01000007)
+// -------------------------------------------------------
+// Token:             0x01000007
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyConfigurationAttribute
+// 	MemberRef #1 (0a000006)
+// 	-------------------------------------------------------
+// 		Member: (0a000006) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #8 (01000008)
+// -------------------------------------------------------
+// Token:             0x01000008
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyCopyrightAttribute
+// 	MemberRef #1 (0a000007)
+// 	-------------------------------------------------------
+// 		Member: (0a000007) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #9 (01000009)
+// -------------------------------------------------------
+// Token:             0x01000009
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyDescriptionAttribute
+// 	MemberRef #1 (0a000008)
+// 	-------------------------------------------------------
+// 		Member: (0a000008) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #10 (0100000a)
+// -------------------------------------------------------
+// Token:             0x0100000a
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyFileVersionAttribute
+// 	MemberRef #1 (0a000009)
+// 	-------------------------------------------------------
+// 		Member: (0a000009) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #11 (0100000b)
+// -------------------------------------------------------
+// Token:             0x0100000b
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyInformationalVersionAttribute
+// 	MemberRef #1 (0a00000a)
+// 	-------------------------------------------------------
+// 		Member: (0a00000a) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #12 (0100000c)
+// -------------------------------------------------------
+// Token:             0x0100000c
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyProductAttribute
+// 	MemberRef #1 (0a00000b)
+// 	-------------------------------------------------------
+// 		Member: (0a00000b) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #13 (0100000d)
+// -------------------------------------------------------
+// Token:             0x0100000d
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Reflection.AssemblyTitleAttribute
+// 	MemberRef #1 (0a00000c)
+// 	-------------------------------------------------------
+// 		Member: (0a00000c) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #14 (0100000e)
+// -------------------------------------------------------
+// Token:             0x0100000e
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.InternalsVisibleToAttribute
+// 	MemberRef #1 (0a00000d)
+// 	-------------------------------------------------------
+// 		Member: (0a00000d) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// TypeRef #15 (0100000f)
+// -------------------------------------------------------
+// Token:             0x0100000f
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.RefSafetyRulesAttribute
+// 	MemberRef #1 (0a00000e)
+// 	-------------------------------------------------------
+// 		Member: (0a00000e) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  I4
+// 
+// TypeRef #16 (01000010)
+// -------------------------------------------------------
+// Token:             0x01000010
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.NullableContextAttribute
+// 	MemberRef #1 (0a00000f)
+// 	-------------------------------------------------------
+// 		Member: (0a00000f) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  UI1
+// 
+// TypeRef #17 (01000011)
+// -------------------------------------------------------
+// Token:             0x01000011
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.NullableAttribute
+// 	MemberRef #1 (0a000010)
+// 	-------------------------------------------------------
+// 		Member: (0a000010) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  UI1
+// 
+// TypeRef #18 (01000012)
+// -------------------------------------------------------
+// Token:             0x01000012
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Object
+// 	MemberRef #1 (0a000013)
+// 	-------------------------------------------------------
+// 		Member: (0a000013) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// TypeRef #19 (01000013)
+// -------------------------------------------------------
+// Token:             0x01000013
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Runtime.CompilerServices.CompilerGeneratedAttribute
+// 	MemberRef #1 (0a000011)
+// 	-------------------------------------------------------
+// 		Member: (0a000011) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		No arguments.
+// 
+// TypeRef #20 (01000014)
+// -------------------------------------------------------
+// Token:             0x01000014
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Diagnostics.DebuggerBrowsableState
+// 
+// TypeRef #21 (01000015)
+// -------------------------------------------------------
+// Token:             0x01000015
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Diagnostics.DebuggerBrowsableAttribute
+// 	MemberRef #1 (0a000012)
+// 	-------------------------------------------------------
+// 		Member: (0a000012) .ctor: 
+// 		CallCnvntn: [DEFAULT]
+// 		hasThis 
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  ValueClass System.Diagnostics.DebuggerBrowsableState
+// 
+// TypeRef #22 (01000016)
+// -------------------------------------------------------
+// Token:             0x01000016
+// ResolutionScope:   0x23000001
+// TypeRefName:       System.Enum
+// 
+// TypeRef #23 (01000017)
+// -------------------------------------------------------
+// Token:             0x01000017
+// ResolutionScope:   0x23000002
+// TypeRefName:       System.Console
+// 	MemberRef #1 (0a000014)
+// 	-------------------------------------------------------
+// 		Member: (0a000014) WriteLine: 
+// 		CallCnvntn: [DEFAULT]
+// 		ReturnType: Void
+// 		1 Arguments
+// 			Argument #1:  String
+// 
+// Assembly
+// -------------------------------------------------------
+// 	Token: 0x20000001
+// 	Name : CarLibrary
+// 	Public Key    :
+// 	Hash Algorithm : 0x00008004
+// 	Version: 1.0.0.1
+// 	Major Version: 0x00000001
+// 	Minor Version: 0x00000000
+// 	Build Number: 0x00000000
+// 	Revision Number: 0x00000001
+// 	Locale: <null>
+// 	Flags : [none] (00000000)
+// 	CustomAttribute #1 (0c000005)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000001
+// 		CustomAttributeName: System.Runtime.CompilerServices.CompilationRelaxationsAttribute :: instance void .ctor(int32)
+// 		Length: 8
+// 		Value : 01 00 08 00 00 00 00 00                          >                <
+// 		ctor args: (8)
+// 
+// 	CustomAttribute #2 (0c000006)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000002
+// 		CustomAttributeName: System.Runtime.CompilerServices.RuntimeCompatibilityAttribute :: instance void .ctor()
+// 		Length: 30
+// 		Value : 01 00 01 00 54 02 16 57  72 61 70 4e 6f 6e 45 78 >    T  WrapNonEx<
+//                       : 63 65 70 74 69 6f 6e 54  68 72 6f 77 73 01       >ceptionThrows   <
+// 		ctor args: ()
+// 
+// 	CustomAttribute #3 (0c000007)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000003
+// 		CustomAttributeName: System.Diagnostics.DebuggableAttribute :: instance void .ctor(value class DebuggingModes)
+// 		Length: 8
+// 		Value : 01 00 07 01 00 00 00 00                          >                <
+// 		ctor args: ( <can not decode> )
+// 
+// 	CustomAttribute #4 (0c000008)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000004
+// 		CustomAttributeName: System.Runtime.Versioning.TargetFrameworkAttribute :: instance void .ctor(class System.String)
+// 		Length: 61
+// 		Value : 01 00 18 2e 4e 45 54 43  6f 72 65 41 70 70 2c 56 >   .NETCoreApp,V<
+//                       : 65 72 73 69 6f 6e 3d 76  39 2e 30 01 00 54 0e 14 >ersion=v9.0  T  <
+//                       : 46 72 61 6d 65 77 6f 72  6b 44 69 73 70 6c 61 79 >FrameworkDisplay<
+//                       : 4e 61 6d 65 08 2e 4e 45  54 20 39 2e 30          >Name .NET 9.0   <
+// 		ctor args: (".NETCoreApp,Version=v9.0")
+// 
+// 	CustomAttribute #5 (0c000009)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000005
+// 		CustomAttributeName: System.Reflection.AssemblyCompanyAttribute :: instance void .ctor(class System.String)
+// 		Length: 16
+// 		Value : 01 00 0b 42 65 6e 69 20  48 61 73 73 65 6e 00 00 >   Beni Hassen  <
+// 		ctor args: ("Beni Hassen")
+// 
+// 	CustomAttribute #6 (0c00000a)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000006
+// 		CustomAttributeName: System.Reflection.AssemblyConfigurationAttribute :: instance void .ctor(class System.String)
+// 		Length: 10
+// 		Value : 01 00 05 44 65 62 75 67  00 00                   >   Debug        <
+// 		ctor args: ("Debug")
+// 
+// 	CustomAttribute #7 (0c00000b)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000007
+// 		CustomAttributeName: System.Reflection.AssemblyCopyrightAttribute :: instance void .ctor(class System.String)
+// 		Length: 19
+// 		Value : 01 00 0e 43 6f 70 79 72  69 67 68 74 20 32 30 32 >   Copyright 202<
+//                       : 35 00 00                                         >5               <
+// 		ctor args: ("Copyright 2025")
+// 
+// 	CustomAttribute #8 (0c00000c)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000008
+// 		CustomAttributeName: System.Reflection.AssemblyDescriptionAttribute :: instance void .ctor(class System.String)
+// 		Length: 41
+// 		Value : 01 00 24 54 68 69 73 20  69 73 20 61 6e 20 61 77 >  $This is an aw<
+//                       : 65 73 6f 6d 65 20 6c 69  62 72 61 72 79 20 66 6f >esome library fo<
+//                       : 72 20 63 61 72 73 2e 00  00                      >r cars.         <
+// 		ctor args: ("This is an awesome library for cars.")
+// 
+// 	CustomAttribute #9 (0c00000d)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a000009
+// 		CustomAttributeName: System.Reflection.AssemblyFileVersionAttribute :: instance void .ctor(class System.String)
+// 		Length: 12
+// 		Value : 01 00 07 31 2e 30 2e 30  2e 32 00 00             >   1.0.0.2      <
+// 		ctor args: ("1.0.0.2")
+// 
+// 	CustomAttribute #10 (0c00000e)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000a
+// 		CustomAttributeName: System.Reflection.AssemblyInformationalVersionAttribute :: instance void .ctor(class System.String)
+// 		Length: 12
+// 		Value : 01 00 07 31 2e 30 2e 30  2e 33 00 00             >   1.0.0.3      <
+// 		ctor args: ("1.0.0.3")
+// 
+// 	CustomAttribute #11 (0c00000f)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000b
+// 		CustomAttributeName: System.Reflection.AssemblyProductAttribute :: instance void .ctor(class System.String)
+// 		Length: 16
+// 		Value : 01 00 0b 50 72 6f 20 43  23 20 31 32 2e 30 00 00 >   Pro C# 12.0  <
+// 		ctor args: ("Pro C# 12.0")
+// 
+// 	CustomAttribute #12 (0c000010)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000c
+// 		CustomAttributeName: System.Reflection.AssemblyTitleAttribute :: instance void .ctor(class System.String)
+// 		Length: 15
+// 		Value : 01 00 0a 43 61 72 4c 69  62 72 61 72 79 00 00    >   CarLibrary   <
+// 		ctor args: ("CarLibrary")
+// 
+// 	CustomAttribute #13 (0c000011)
+// 	-------------------------------------------------------
+// 		CustomAttribute Type: 0a00000d
+// 		CustomAttributeName: System.Runtime.CompilerServices.InternalsVisibleToAttribute :: instance void .ctor(class System.String)
+// 		Length: 20
+// 		Value : 01 00 0f 43 53 68 61 72  70 43 61 72 43 6c 69 65 >   CSharpCarClie<
+//                       : 6e 74 00 00                                      >nt              <
+// 		ctor args: ("CSharpCarClient")
+// 
+// 
+// AssemblyRef #1 (23000001)
+// -------------------------------------------------------
+// 	Token: 0x23000001
+// 	Public Key or Token: b0 3f 5f 7f 11 d5 0a 3a 
+// 	Name: System.Runtime
+// 	Version: 9.0.0.0
+// 	Major Version: 0x00000009
+// 	Minor Version: 0x00000000
+// 	Build Number: 0x00000000
+// 	Revision Number: 0x00000000
+// 	Locale: <null>
+// 	HashValue Blob:
+// 	Flags: [none] (00000000)
+// 
+// 
+// AssemblyRef #2 (23000002)
+// -------------------------------------------------------
+// 	Token: 0x23000002
+// 	Public Key or Token: b0 3f 5f 7f 11 d5 0a 3a 
+// 	Name: System.Console
+// 	Version: 9.0.0.0
+// 	Major Version: 0x00000009
+// 	Minor Version: 0x00000000
+// 	Build Number: 0x00000000
+// 	Revision Number: 0x00000000
+// 	Locale: <null>
+// 	HashValue Blob:
+// 	Flags: [none] (00000000)
+// 
+// 
+// User Strings
+// -------------------------------------------------------
+// 70000001 : (32) L"Eek! Your engine block exploded!"
+// 70000043 : (34) L"Ramming speed! Faster is better..."
+// 
+// 
+// Coff symbol name overhead:  0
+// ===========================================================
+// ===========================================================
+// ===========================================================
+// ================================= END OF METAINFO ================================================
+
+</FONT></I>
+// Metadata version: v4.0.30319
+<B><FONT COLOR=NAVY>.assembly extern</FONT></B> <I><FONT COLOR=GREEN>/*23000001*/ </FONT></I><A NAME=A23000001>System.Runtime</A>
+{
+  <B><FONT COLOR=NAVY>.publickeytoken</FONT></B> = (B0 3F 5F 7F 11 D5 0A 3A )                         <I><FONT COLOR=GREEN>// .?_....:</FONT></I>
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 9:0:0:0
+}
+<B><FONT COLOR=NAVY>.assembly extern</FONT></B> <I><FONT COLOR=GREEN>/*23000002*/ </FONT></I><A NAME=A23000002>System.Console</A>
+{
+  <B><FONT COLOR=NAVY>.publickeytoken</FONT></B> = (B0 3F 5F 7F 11 D5 0A 3A )                         <I><FONT COLOR=GREEN>// .?_....:</FONT></I>
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 9:0:0:0
+}
+<B><FONT COLOR=NAVY>.assembly</FONT></B> <I><FONT COLOR=GREEN>/*20000001*/ </FONT></I><A NAME=A20000001>CarLibrary</A>
+{
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000005:0A000001*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilationRelaxationsAttribute<I><FONT COLOR=GREEN>/*01000001*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000001 */</FONT></I> = ( 01 00 08 00 00 00 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000006:0A000002*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute<I><FONT COLOR=GREEN>/*01000002*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000002 */</FONT></I> = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78 <I><FONT COLOR=GREEN>  // ....T..WrapNonEx</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       <I><FONT COLOR=GREEN>// ceptionThrows.</FONT></I>
+<I><FONT COLOR=GREEN>
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000007:0A000003*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggableAttribute<I><FONT COLOR=GREEN>/*01000003*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggableAttribute<I><FONT COLOR=GREEN>/*01000003*/</FONT></I>/DebuggingModes<I><FONT COLOR=GREEN>/*01000004*/</FONT></I>)<I><FONT COLOR=GREEN> /* 0A000003 */</FONT></I> = ( 01 00 07 01 00 00 00 00 ) 
+</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000008:0A000004*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.Versioning.TargetFrameworkAttribute<I><FONT COLOR=GREEN>/*01000005*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000004 */</FONT></I> = ( 01 00 18 2E 4E 45 54 43 6F 72 65 41 70 70 2C 56 <I><FONT COLOR=GREEN>  // ....NETCoreApp,V</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             65 72 73 69 6F 6E 3D 76 39 2E 30 01 00 54 0E 14 <I><FONT COLOR=GREEN>  // ersion=v9.0..T..</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             46 72 61 6D 65 77 6F 72 6B 44 69 73 70 6C 61 79 <I><FONT COLOR=GREEN>  // FrameworkDisplay</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             4E 61 6D 65 08 2E 4E 45 54 20 39 2E 30 )          <I><FONT COLOR=GREEN>// Name..NET 9.0</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000009:0A000005*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyCompanyAttribute<I><FONT COLOR=GREEN>/*01000006*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000005 */</FONT></I> = ( 01 00 0B 42 65 6E 69 20 48 61 73 73 65 6E 00 00 ) <I><FONT COLOR=GREEN>// ...Beni Hassen..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000A:0A000006*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyConfigurationAttribute<I><FONT COLOR=GREEN>/*01000007*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000006 */</FONT></I> = ( 01 00 05 44 65 62 75 67 00 00 )                   <I><FONT COLOR=GREEN>// ...Debug..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000B:0A000007*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyCopyrightAttribute<I><FONT COLOR=GREEN>/*01000008*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000007 */</FONT></I> = ( 01 00 0E 43 6F 70 79 72 69 67 68 74 20 32 30 32 <I><FONT COLOR=GREEN>  // ...Copyright 202</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       35 00 00 )                                        <I><FONT COLOR=GREEN>// 5..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000C:0A000008*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyDescriptionAttribute<I><FONT COLOR=GREEN>/*01000009*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000008 */</FONT></I> = ( 01 00 24 54 68 69 73 20 69 73 20 61 6E 20 61 77 <I><FONT COLOR=GREEN>  // ..$This is an aw</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         65 73 6F 6D 65 20 6C 69 62 72 61 72 79 20 66 6F <I><FONT COLOR=GREEN>  // esome library fo</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         72 20 63 61 72 73 2E 00 00 )                      <I><FONT COLOR=GREEN>// r cars...</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000D:0A000009*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyFileVersionAttribute<I><FONT COLOR=GREEN>/*0100000A*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000009 */</FONT></I> = ( 01 00 07 31 2E 30 2E 30 2E 32 00 00 )             <I><FONT COLOR=GREEN>// ...1.0.0.2..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000E:0A00000A*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyInformationalVersionAttribute<I><FONT COLOR=GREEN>/*0100000B*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000A */</FONT></I> = ( 01 00 07 31 2E 30 2E 30 2E 33 00 00 )             <I><FONT COLOR=GREEN>// ...1.0.0.3..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00000F:0A00000B*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyProductAttribute<I><FONT COLOR=GREEN>/*0100000C*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000B */</FONT></I> = ( 01 00 0B 50 72 6F 20 43 23 20 31 32 2E 30 00 00 ) <I><FONT COLOR=GREEN>// ...Pro C# 12.0..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000010:0A00000C*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Reflection.AssemblyTitleAttribute<I><FONT COLOR=GREEN>/*0100000D*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000C */</FONT></I> = ( 01 00 0A 43 61 72 4C 69 62 72 61 72 79 00 00 )    <I><FONT COLOR=GREEN>// ...CarLibrary..</FONT></I>
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000011:0A00000D*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.InternalsVisibleToAttribute<I><FONT COLOR=GREEN>/*0100000E*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000D */</FONT></I> = ( 01 00 0F 43 53 68 61 72 70 43 61 72 43 6C 69 65 <I><FONT COLOR=GREEN>  // ...CSharpCarClie</FONT></I>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      6E 74 00 00 )                                     <I><FONT COLOR=GREEN>// nt..</FONT></I>
+  <B><FONT COLOR=NAVY>.hash algorithm</FONT></B> 0x00008004
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 1:0:0:1
+}
+<B><FONT COLOR=NAVY>.module</FONT></B> CarLibrary.dll
+<I><FONT COLOR=GREEN>// MVID: {77A699CD-A4A3-4C38-8449-6FBFB77CE967}</FONT></I>
+<B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000004:0A00000E*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.RefSafetyRulesAttribute<I><FONT COLOR=GREEN>/*0100000F*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000E */</FONT></I> = ( 01 00 0B 00 00 00 00 00 ) 
+<B><FONT COLOR=NAVY>.imagebase</FONT></B> 0x10000000
+<B><FONT COLOR=NAVY>.file alignment</FONT></B> 0x00000200
+<B><FONT COLOR=NAVY>.stackreserve</FONT></B> 0x00100000
+<B><FONT COLOR=NAVY>.subsystem</FONT></B> 0x0003       <I><FONT COLOR=GREEN>// WINDOWS_CUI</FONT></I>
+<B><FONT COLOR=NAVY>.corflags</FONT></B> 0x00000001<I><FONT COLOR=GREEN>    //  ILONLY</FONT></I>
+<I><FONT COLOR=GREEN>// Image base: 0x05380000</FONT></I>
+
+
+<I><FONT COLOR=GREEN>// =============== CLASS MEMBERS DECLARATION ===================</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000002*/ </FONT></I><B><FONT COLOR=NAVY>public abstract auto ansi beforefieldinit </FONT></B>CarLibrary.<A NAME=A02000002>Car</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Object<I><FONT COLOR=GREEN>/*01000012*/</FONT></I>
+{
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000015:0A00000F*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.NullableContextAttribute<I><FONT COLOR=GREEN>/*01000010*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>uint8</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000F */</FONT></I> = ( 01 00 01 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000016:0A000010*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.NullableAttribute<I><FONT COLOR=GREEN>/*01000011*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>uint8</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000010 */</FONT></I> = ( 01 00 00 00 00 ) 
+  <A NAME=A04000001><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000001*/ </FONT></I><B><FONT COLOR=NAVY>private </FONT></B><B><FONT COLOR=NAVY>string</FONT></B> '&lt;PetName&gt;k__BackingField'
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000002:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000003:0A000012*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableAttribute<I><FONT COLOR=GREEN>/*01000015*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableState<I><FONT COLOR=GREEN>/*01000014*/</FONT></I>)<I><FONT COLOR=GREEN> /* 0A000012 */</FONT></I> = ( 01 00 00 00 00 00 00 00 ) 
+  <A NAME=A04000002><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000002*/ </FONT></I><B><FONT COLOR=NAVY>private </FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> '&lt;CurrentSpeed&gt;k__BackingField'
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000013:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000014:0A000012*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableAttribute<I><FONT COLOR=GREEN>/*01000015*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableState<I><FONT COLOR=GREEN>/*01000014*/</FONT></I>)<I><FONT COLOR=GREEN> /* 0A000012 */</FONT></I> = ( 01 00 00 00 00 00 00 00 ) 
+  <A NAME=A04000003><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000003*/ </FONT></I><B><FONT COLOR=NAVY>private </FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> '&lt;MaxSpeed&gt;k__BackingField'
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000018:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000019:0A000012*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableAttribute<I><FONT COLOR=GREEN>/*01000015*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Diagnostics.DebuggerBrowsableState<I><FONT COLOR=GREEN>/*01000014*/</FONT></I>)<I><FONT COLOR=GREEN> /* 0A000012 */</FONT></I> = ( 01 00 00 00 00 00 00 00 ) 
+  <A NAME=A04000004><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000004*/ </FONT></I><B><FONT COLOR=NAVY>family </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> State
+  <A NAME=A06000001><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000001*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>string</FONT></B> 
+          get_PetName()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 0E</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000001:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2050</FONT></I>
+    // Code size       7 (0x7)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 7B   | (04)000001       */</FONT></I> <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>string</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000001>'&lt;PetName&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000001 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>get_PetName</FONT></I>
+
+  <A NAME=A06000002><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000002*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          set_PetName(<B><FONT COLOR=NAVY>string</FONT></B> 'value')<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 01 01 0E</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000012:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2058</FONT></I>
+    // Code size       8 (0x8)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 7D   | (04)000001       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>string</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000001>'&lt;PetName&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000001 */</FONT></I>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>set_PetName</FONT></I>
+
+  <A NAME=A06000003><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000003*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> 
+          get_CurrentSpeed()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C000017:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2061</FONT></I>
+    // Code size       7 (0x7)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 7B   | (04)000002       */</FONT></I> <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000002>'&lt;CurrentSpeed&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000002 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>get_CurrentSpeed</FONT></I>
+
+  <A NAME=A06000004><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000004*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          set_CurrentSpeed(<B><FONT COLOR=NAVY>int32</FONT></B> 'value')<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 01 01 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00001A:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2069</FONT></I>
+    // Code size       8 (0x8)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 7D   | (04)000002       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000002>'&lt;CurrentSpeed&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000002 */</FONT></I>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>set_CurrentSpeed</FONT></I>
+
+  <A NAME=A06000005><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000005*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> 
+          get_MaxSpeed()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00001B:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2072</FONT></I>
+    // Code size       7 (0x7)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 7B   | (04)000003       */</FONT></I> <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000003>'&lt;MaxSpeed&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000003 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>get_MaxSpeed</FONT></I>
+
+  <A NAME=A06000006><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000006*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          set_MaxSpeed(<B><FONT COLOR=NAVY>int32</FONT></B> 'value')<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 01 01 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00001C:0A000011*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.CompilerGeneratedAttribute<I><FONT COLOR=GREEN>/*01000013*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000011 */</FONT></I> = ( 01 00 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x207a</FONT></I>
+    // Code size       8 (0x8)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 7D   | (04)000003       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000003>'&lt;MaxSpeed&gt;k__BackingField'</A><I><FONT COLOR=GREEN> /* 04000003 */</FONT></I>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>set_MaxSpeed</FONT></I>
+
+  <A NAME=A06000007><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000007*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> 
+          get_EngineState()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 11 0C</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2083</FONT></I>
+    // Code size       7 (0x7)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 7B   | (04)000004       */</FONT></I> <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000004>State</A><I><FONT COLOR=GREEN> /* 04000004 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>get_EngineState</FONT></I>
+
+  <A NAME=A06000008><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000008*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig newslot abstract virtual </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          TurboBoost()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x0</FONT></I>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>TurboBoost</FONT></I>
+
+  <A NAME=A06000009><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000009*/ </FONT></I><B><FONT COLOR=NAVY>family hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x208b</FONT></I>
+    // Code size       16 (0x10)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 16   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldc.i4.0</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 7D   | (04)000004       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000004>State</A><I><FONT COLOR=GREEN> /* 04000004 */</FONT></I>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0008:  <I><FONT COLOR=GREEN>/* 28   | (0A)000013       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Object<I><FONT COLOR=GREEN>/*01000012*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000013 */</FONT></I>
+    IL_000d:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000e:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000f:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A0600000A><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000A*/ </FONT></I><B><FONT COLOR=NAVY>family hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor(<B><FONT COLOR=NAVY>string</FONT></B> name,
+                <B><FONT COLOR=NAVY>int32</FONT></B> maxSpeed,
+                <B><FONT COLOR=NAVY>int32</FONT></B> currentSpeed)<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 03 01 0E 08 08</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x209c</FONT></I>
+    // Code size       40 (0x28)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 16   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldc.i4.0</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 7D   | (04)000004       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000004>State</A><I><FONT COLOR=GREEN> /* 04000004 */</FONT></I>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0008:  <I><FONT COLOR=GREEN>/* 28   | (0A)000013       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Object<I><FONT COLOR=GREEN>/*01000012*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000013 */</FONT></I>
+    IL_000d:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000e:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000f:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0010:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0011:  <I><FONT COLOR=GREEN>/* 28   | (06)000002       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000002>set_PetName</A>(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 06000002 */</FONT></I>
+    IL_0016:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0017:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0018:  <I><FONT COLOR=GREEN>/* 04   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.2</FONT></B>
+    IL_0019:  <I><FONT COLOR=GREEN>/* 28   | (06)000006       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000006>set_MaxSpeed</A>(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 06000006 */</FONT></I>
+    IL_001e:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_001f:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0020:  <I><FONT COLOR=GREEN>/* 05   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.3</FONT></B>
+    IL_0021:  <I><FONT COLOR=GREEN>/* 28   | (06)000004       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000004>set_CurrentSpeed</A>(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 06000004 */</FONT></I>
+    IL_0026:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0027:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Car::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <B><FONT COLOR=NAVY>.property</FONT></B> <I><FONT COLOR=GREEN>/*17000001*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>string</FONT></B> PetName()
+  {
+    <B><FONT COLOR=NAVY>.get</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>string</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000001>get_PetName</A>()<I><FONT COLOR=GREEN> /* 06000001 */</FONT></I>
+    <B><FONT COLOR=NAVY>.set</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000002>set_PetName</A>(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 06000002 */</FONT></I>
+  } <I><FONT COLOR=GREEN>// end of property Car::</FONT></I><I><FONT COLOR=GREEN>PetName</FONT></I>
+  <B><FONT COLOR=NAVY>.property</FONT></B> <I><FONT COLOR=GREEN>/*17000002*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> CurrentSpeed()
+  {
+    <B><FONT COLOR=NAVY>.get</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000003>get_CurrentSpeed</A>()<I><FONT COLOR=GREEN> /* 06000003 */</FONT></I>
+    <B><FONT COLOR=NAVY>.set</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000004>set_CurrentSpeed</A>(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 06000004 */</FONT></I>
+  } <I><FONT COLOR=GREEN>// end of property Car::</FONT></I><I><FONT COLOR=GREEN>CurrentSpeed</FONT></I>
+  <B><FONT COLOR=NAVY>.property</FONT></B> <I><FONT COLOR=GREEN>/*17000003*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> MaxSpeed()
+  {
+    <B><FONT COLOR=NAVY>.get</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000005>get_MaxSpeed</A>()<I><FONT COLOR=GREEN> /* 06000005 */</FONT></I>
+    <B><FONT COLOR=NAVY>.set</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000006>set_MaxSpeed</A>(<B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 06000006 */</FONT></I>
+  } <I><FONT COLOR=GREEN>// end of property Car::</FONT></I><I><FONT COLOR=GREEN>MaxSpeed</FONT></I>
+  <B><FONT COLOR=NAVY>.property</FONT></B> <I><FONT COLOR=GREEN>/*17000004*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I>
+          EngineState()
+  {
+    <B><FONT COLOR=NAVY>.get</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000007>get_EngineState</A>()<I><FONT COLOR=GREEN> /* 06000007 */</FONT></I>
+  } <I><FONT COLOR=GREEN>// end of property Car::</FONT></I><I><FONT COLOR=GREEN>EngineState</FONT></I>
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.Car</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000003*/ </FONT></I><B><FONT COLOR=NAVY>public auto ansi sealed </FONT></B>CarLibrary.<A NAME=A02000003>EngineStateEnum</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Enum<I><FONT COLOR=GREEN>/*01000016*/</FONT></I>
+{
+  <A NAME=A04000005><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000005*/ </FONT></I><B><FONT COLOR=NAVY>public specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> value__
+  <A NAME=A04000006><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000006*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> EngineAlive = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000000)
+  <A NAME=A04000007><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000007*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> EngineDead = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000001)
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.EngineStateEnum</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000004*/ </FONT></I><B><FONT COLOR=NAVY>public auto ansi beforefieldinit </FONT></B>CarLibrary.<A NAME=A02000004>MiniVan</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>
+{
+  <A NAME=A0600000B><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000B*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x20c5</FONT></I>
+    // Code size       9 (0x9)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 28   | (06)000009       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000009>.ctor</A>()<I><FONT COLOR=GREEN> /* 06000009 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0008:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method MiniVan::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A0600000C><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000C*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor(<B><FONT COLOR=NAVY>string</FONT></B> name,
+                <B><FONT COLOR=NAVY>int32</FONT></B> maxSpeed,
+                <B><FONT COLOR=NAVY>int32</FONT></B> currentSpeed)<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 03 01 0E 08 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00001D:0A00000F*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.NullableContextAttribute<I><FONT COLOR=GREEN>/*01000010*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>uint8</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000F */</FONT></I> = ( 01 00 01 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x20cf</FONT></I>
+    // Code size       12 (0xc)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 04   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.2</FONT></B>
+    IL_0003:  <I><FONT COLOR=GREEN>/* 05   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.3</FONT></B>
+    IL_0004:  <I><FONT COLOR=GREEN>/* 28   | (06)00000A       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A0600000A>.ctor</A>(<B><FONT COLOR=NAVY>string</FONT></B>,
+                                                                                                                                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 0600000A */</FONT></I>
+    IL_0009:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000a:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000b:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method MiniVan::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A0600000D><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000D*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig virtual </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          TurboBoost()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x20dc</FONT></I>
+    // Code size       20 (0x14)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 17   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldc.i4.1</FONT></B>
+    IL_0003:  <I><FONT COLOR=GREEN>/* 7D   | (04)000004       */</FONT></I> <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000003>CarLibrary.EngineStateEnum</A><I><FONT COLOR=GREEN>/*02000003*/</FONT></I> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A04000004>State</A><I><FONT COLOR=GREEN> /* 04000004 */</FONT></I>
+    IL_0008:  <I><FONT COLOR=GREEN>/* 72   | (70)000001       */</FONT></I> <B><FONT COLOR=NAVY>ldstr</FONT></B> "Eek! Your engine block exploded!"<I><FONT COLOR=GREEN> /* 70000001 */</FONT></I>
+    IL_000d:  <I><FONT COLOR=GREEN>/* 28   | (0A)000014       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000002>System.Console</A><I><FONT COLOR=GREEN>/*23000002*/</FONT></I>]System.Console<I><FONT COLOR=GREEN>/*01000017*/</FONT></I>::WriteLine(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000014 */</FONT></I>
+    IL_0012:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0013:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method MiniVan::</FONT></I><I><FONT COLOR=GREEN>TurboBoost</FONT></I>
+
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.MiniVan</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000005*/ </FONT></I><B><FONT COLOR=NAVY>public auto ansi sealed </FONT></B>CarLibrary.<A NAME=A02000005>MusicMediaEnum</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Enum<I><FONT COLOR=GREEN>/*01000016*/</FONT></I>
+{
+  <A NAME=A04000008><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000008*/ </FONT></I><B><FONT COLOR=NAVY>public specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> value__
+  <A NAME=A04000009><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*04000009*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000005>CarLibrary.MusicMediaEnum</A><I><FONT COLOR=GREEN>/*02000005*/</FONT></I> MusicCd = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000000)
+  <A NAME=A0400000A><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*0400000A*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000005>CarLibrary.MusicMediaEnum</A><I><FONT COLOR=GREEN>/*02000005*/</FONT></I> MusicTape = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000001)
+  <A NAME=A0400000B><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*0400000B*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000005>CarLibrary.MusicMediaEnum</A><I><FONT COLOR=GREEN>/*02000005*/</FONT></I> MusicRadio = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000002)
+  <A NAME=A0400000C><B><FONT COLOR=NAVY>.field</FONT></B></A> <I><FONT COLOR=GREEN>/*0400000C*/ </FONT></I><B><FONT COLOR=NAVY>public static literal </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B><A HREF=#A02000005>CarLibrary.MusicMediaEnum</A><I><FONT COLOR=GREEN>/*02000005*/</FONT></I> MusicMp3 = <B><FONT COLOR=NAVY>int32</FONT></B>(0x00000003)
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.MusicMediaEnum</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000006*/ </FONT></I><B><FONT COLOR=NAVY>private auto ansi beforefieldinit </FONT></B>CarLibrary.<A NAME=A02000006>MyInternalClass</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Object<I><FONT COLOR=GREEN>/*01000012*/</FONT></I>
+{
+  <A NAME=A0600000E><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000E*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x20f1</FONT></I>
+    // Code size       8 (0x8)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 28   | (0A)000013       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Object<I><FONT COLOR=GREEN>/*01000012*/</FONT></I>::.ctor()<I><FONT COLOR=GREEN> /* 0A000013 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method MyInternalClass::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.MyInternalClass</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <I><FONT COLOR=GREEN>/*02000007*/ </FONT></I><B><FONT COLOR=NAVY>public auto ansi beforefieldinit </FONT></B>CarLibrary.<A NAME=A02000007>SportsCar</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>
+{
+  <A NAME=A0600000F><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*0600000F*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x20fa</FONT></I>
+    // Code size       9 (0x9)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 28   | (06)000009       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A06000009>.ctor</A>()<I><FONT COLOR=GREEN> /* 06000009 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0007:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0008:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method SportsCar::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A06000010><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000010*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor(<B><FONT COLOR=NAVY>string</FONT></B> name,
+                <B><FONT COLOR=NAVY>int32</FONT></B> maxSpeed,
+                <B><FONT COLOR=NAVY>int32</FONT></B> currentSpeed)<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 03 01 0E 08 08</FONT></I>
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <I><FONT COLOR=GREEN>/*0C00001E:0A00000F*/ </FONT></I><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>System.Runtime</A><I><FONT COLOR=GREEN>/*23000001*/</FONT></I>]System.Runtime.CompilerServices.NullableContextAttribute<I><FONT COLOR=GREEN>/*01000010*/</FONT></I>::.ctor(<B><FONT COLOR=NAVY>uint8</FONT></B>)<I><FONT COLOR=GREEN> /* 0A00000F */</FONT></I> = ( 01 00 01 00 00 ) 
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2104</FONT></I>
+    // Code size       12 (0xc)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 02   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 03   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0002:  <I><FONT COLOR=GREEN>/* 04   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.2</FONT></B>
+    IL_0003:  <I><FONT COLOR=GREEN>/* 05   |                  */</FONT></I> <B><FONT COLOR=NAVY>ldarg.3</FONT></B>
+    IL_0004:  <I><FONT COLOR=GREEN>/* 28   | (06)00000A       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>CarLibrary.Car</A><I><FONT COLOR=GREEN>/*02000002*/</FONT></I>::<A HREF=#A0600000A>.ctor</A>(<B><FONT COLOR=NAVY>string</FONT></B>,
+                                                                                                                                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>int32</FONT></B>)<I><FONT COLOR=GREEN> /* 0600000A */</FONT></I>
+    IL_0009:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000a:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000b:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method SportsCar::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A06000011><B><FONT COLOR=NAVY>.method</FONT></B></A> <I><FONT COLOR=GREEN>/*06000011*/ </FONT></I><B><FONT COLOR=NAVY>public hidebysig virtual </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          TurboBoost()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+<I><FONT COLOR=GREEN>  // SIG: 20 00 01</FONT></I>
+  {
+<I><FONT COLOR=GREEN>    // Method begins at RVA 0x2111</FONT></I>
+    // Code size       13 (0xd)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0001:  <I><FONT COLOR=GREEN>/* 72   | (70)000043       */</FONT></I> <B><FONT COLOR=NAVY>ldstr</FONT></B> "Ramming speed! Faster is better..."<I><FONT COLOR=GREEN> /* 70000043 */</FONT></I>
+    IL_0006:  <I><FONT COLOR=GREEN>/* 28   | (0A)000014       */</FONT></I> <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000002>System.Console</A><I><FONT COLOR=GREEN>/*23000002*/</FONT></I>]System.Console<I><FONT COLOR=GREEN>/*01000017*/</FONT></I>::WriteLine(<B><FONT COLOR=NAVY>string</FONT></B>)<I><FONT COLOR=GREEN> /* 0A000014 */</FONT></I>
+    IL_000b:  <I><FONT COLOR=GREEN>/* 00   |                  */</FONT></I> <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_000c:  <I><FONT COLOR=GREEN>/* 2A   |                  */</FONT></I> <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method SportsCar::</FONT></I><I><FONT COLOR=GREEN>TurboBoost</FONT></I>
+
+} <I><FONT COLOR=GREEN>// end of class CarLibrary.SportsCar</FONT></I>
+
+
+<I><FONT COLOR=GREEN>// =============================================================</FONT></I>
+
+<I><FONT COLOR=GREEN>// *********** DISASSEMBLY COMPLETE ***********************</FONT></I>
+<I><FONT COLOR=GREEN>// WARNING: Created Win32 resource file CarLibrary.res</FONT></I>
+</PRE>
+</BODY>
+</HTML>

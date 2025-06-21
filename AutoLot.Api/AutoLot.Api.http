@@ -1,0 +1,16 @@
+@AutoLot.Api_HostAddress = https://localhost:5011
+
+GET {{AutoLot.Api_HostAddress}}/api/v1/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{AutoLot.Api_HostAddress}}/weatherforecast/?api-version=2.0
+Accept: application/json
+
+###
+
+GET {{AutoLot.Api_HostAddress}}/weatherforecast/?api-version=1.0
+Accept: application/json
+
+###

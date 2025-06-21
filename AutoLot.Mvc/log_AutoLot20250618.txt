@@ -1,0 +1,6 @@
+[25-06-18 01:03:02 Error] AutoLot.Mvc:AutoLot.Mvc.Controllers.HomeController
+
+Message:Test error
+in method Index at C:\Users\youne\source\repos\ProCSharp10WithDotNet6\AutoLot.Mvc\Controllers\HomeController.cs:14
+
+

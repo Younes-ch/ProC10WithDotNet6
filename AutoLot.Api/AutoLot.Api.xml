@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoLot.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.GetAllBad">
+            <summary>
+            Retrieves all entities of type <typeparamref name="TEntity"/>.
+            </summary>
+            <remarks>This method is deprecated and should not be used in new implementations. It is intended for
+            legacy support only. The method returns a collection of entities if the request is successful, or an appropriate
+            error response if the request fails.</remarks>
+            <returns>A collection of entities of type <typeparamref name="TEntity"/> if the request is successful.</returns>
+            <exception cref="T:System.Exception">Always thrown to indicate that this method is not intended for use.</exception>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.GetAllFuture">
+            <summary>
+            Retrieves all future entities.
+            </summary>
+            <remarks>This method returns a collection of entities that are scheduled for future use or events. The
+            response is formatted as JSON and adheres to API version 2.0-Beta.</remarks>
+            <returns>A collection of future entities as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>. If no entities are found, an empty
+            collection is returned.</returns>
+            <exception cref="T:System.NotImplementedException">This method is not yet implemented.</exception>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.GetAll">
+            <summary>
+            Retrieves all entities of type <typeparamref name="TEntity"/> from the repository.
+            </summary>
+            <remarks>This method returns all entities, bypassing any query filters that may be applied. Use this
+            method with caution if query filters are intended to enforce security or data visibility.</remarks>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing all entities of type <typeparamref name="TEntity"/>. Returns an empty
+            collection if no entities are found.</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.GetOne(System.Int32)">
+            <summary>
+            Retrieves a single entity by its unique identifier.
+            </summary>
+            <remarks>This method returns a 200 OK response with the entity if it is found, a 204 No Content
+            response if no entity exists with the specified identifier, a 400 Bad Request response if the request is
+            invalid, or a 401 Unauthorized response if the caller is not authorized.</remarks>
+            <param name="id">The unique identifier of the entity to retrieve. Must be a positive integer.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the requested entity if found. Returns <see langword="null"/>
+            if no entity exists with the specified identifier.</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.UpdateOne(System.Int32,`0)">
+            <summary>
+            Updates an existing entity in the repository.
+            </summary>
+            <remarks>This method validates that the <paramref name="id"/> matches the <see cref="!:TEntity.Id"/>
+            property of the provided <paramref name="entity"/> and that the model state is valid. If validation fails, a
+            <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status400BadRequest"/> response is returned. Exceptions are caught and handled
+            gracefully, returning a <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status400BadRequest"/> response.
+            Sample body:
+            <pre>
+            {
+                "Id": 1,
+                "TimeStamp": "AAAAAAAAB+E="
+                "MakeId": 1,
+                "Color": "Black",
+                "PetName": "Zippy",
+                "MakeColor": "VW (Black)",
+            }
+            </pre>
+            </remarks>
+            <param name="id">The unique identifier of the entity to update. Must match the <see cref="!:TEntity.Id"/> property of the provided
+            <paramref name="entity"/>.</param>
+            <param name="entity">The updated entity data. The <see cref="!:TEntity.Id"/> property must match the <paramref name="id"/> parameter.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> indicating the result of the operation: <list type="bullet">
+            <item><description><see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> if the update was successful.</description></item>
+            <item><description><see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status400BadRequest"/> if the <paramref name="id"/> does not match the
+            <see cref="!:TEntity.Id"/> property, the model state is invalid, or an exception occurs.</description></item>
+            <item><description><see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status401Unauthorized"/> if the caller is not authorized to perform
+            the operation.</description></item> </list></returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.AddOne(`0)">
+            <summary>
+            Adds a new entity to the repository and returns the created entity.
+            </summary>
+            <remarks>This method validates the provided entity before adding it to the repository. If validation
+            fails,  a 400 Bad Request response is returned. Upon successful addition, the method returns a 201 Created 
+            response with the location of the newly created entity.
+            Sample body:
+            <pre>
+            {
+                "Id": 1,
+                "TimeStamp": "AAAAAAAAB+E="
+                "MakeId": 1,
+                "Color": "Black",
+                "PetName": "Zippy",
+                "MakeColor": "VW (Black)",
+            }
+            </pre>
+            </remarks>
+            <param name="entity">The entity to be added. Must not be null and must satisfy validation requirements.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing the created entity if the operation is successful. Returns a
+            400 Bad Request response if the entity is invalid or an error occurs during processing. Returns a 401
+            Unauthorized response if the caller is not authorized.</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.Base.BaseCrudController`2.DeleteOne(System.Int32,`0)">
+            <summary>
+            Deletes a single record
+            </summary>
+            <remarks>
+            Sample body:
+            <pre>
+            {
+                "Id": 1,
+                "TimeStamp": "AAAAAAAAB+E="
+            }
+            </pre>
+            </remarks>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.CarsController.GetCarsByMake(System.Nullable{System.Int32})">
+            <summary>
+            Retrieves a collection of cars filtered by their make identifier.
+            </summary>
+            <remarks>If a valid make identifier is provided, the method returns all cars associated with the
+            specified make. If no identifier is provided or the identifier is invalid, the method returns all cars, ignoring
+            any query filters.</remarks>
+            <param name="id">The optional identifier of the car make. Must be greater than 0 to filter by make.</param>
+            <returns>A collection of <see cref="T:AutoLot.Models.Entities.Car"/> objects. If the make identifier is valid, the collection contains cars
+            associated with the specified make. Otherwise, the collection contains all cars.</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.ValuesController.Get">
+            <summary>
+            This is an example Get method returning JSON
+            </summary>
+            <remarks>This is one of several examples for returning JSON:
+            <pre>
+            [
+              "value1",
+              "value2"
+            ]
+            </pre>
+            </remarks>
+            <returns>List of strings</returns>
+        </member>
+        <member name="M:AutoLot.Api.Controllers.WeatherForecastController.Get">
+            <summary>
+            Retrieves a collection of weather forecasts for the next five days.
+            </summary>
+            <remarks>The temperature values are randomly generated within the range of -20 to 55 degrees Celsius,
+            and the summary is selected randomly from a predefined set of descriptions.</remarks>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing five <see cref="T:AutoLot.Api.WeatherForecast"/> objects, each representing a
+            forecast for a specific day. The forecasts include the date, temperature in Celsius, and a summary description.</returns>
+        </member>
+    </members>
+</doc>
