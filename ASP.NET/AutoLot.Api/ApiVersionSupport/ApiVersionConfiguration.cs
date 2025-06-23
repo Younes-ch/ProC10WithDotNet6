@@ -21,6 +21,7 @@ public static class ApiVersionConfiguration
                     new MediaTypeApiVersionReader(), // default to "v"
                     new MediaTypeApiVersionReader("api-version"));
             })
+            .AddMvc()
             .AddApiExplorer(options =>
             {
                 options.DefaultApiVersion = defaultVersion;
