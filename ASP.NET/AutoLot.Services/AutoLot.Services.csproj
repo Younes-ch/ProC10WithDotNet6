@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoLot.Dals\AutoLot.Dals.csproj" />
-    <ProjectReference Include="..\AutoLot.Models\AutoLot.Models.csproj" />
+    <ProjectReference Include="..\..\EF Core\AutoLot.Dals\AutoLot.Dals.csproj" />
+    <ProjectReference Include="..\..\EF Core\AutoLot.Models\AutoLot.Models.csproj" />
   </ItemGroup>
 
 </Project>

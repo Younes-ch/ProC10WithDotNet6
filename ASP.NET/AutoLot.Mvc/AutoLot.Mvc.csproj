@@ -23,10 +23,10 @@
         <PackageReference Include="System.Text.Json" Version="9.0.6" />
     </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\AutoLot.Models\AutoLot.Models.csproj" />
-        <ProjectReference Include="..\AutoLot.Dal\AutoLot.Dal.csproj" />
-        <ProjectReference Include="..\AutoLot.Services\AutoLot.Services.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EF Core\AutoLot.Dals\AutoLot.Dals.csproj" />
+    <ProjectReference Include="..\..\EF Core\AutoLot.Models\AutoLot.Models.csproj" />
+    <ProjectReference Include="..\AutoLot.Services\AutoLot.Services.csproj" />
+  </ItemGroup>
 
 </Project>

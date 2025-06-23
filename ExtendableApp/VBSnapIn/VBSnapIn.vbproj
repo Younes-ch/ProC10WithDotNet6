@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetPath) $(SolutionDir)MyExtendableApp\$(OutDir)$(TargetFileName) /Y&#xD;&#xA;copy $(TargetPath) $(SolutionDir)MyExtendableApp\$(TargetFileName) /Y" />
+    <Exec Command="copy $(TargetPath) $(SolutionDir)\ExtendableApp\MyExtendableApp\$(OutDir)$(TargetFileName) /Y&#xD;&#xA;copy $(TargetPath) $(SolutionDir)\ExtendableApp\MyExtendableApp\$(TargetFileName) /Y" />
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
